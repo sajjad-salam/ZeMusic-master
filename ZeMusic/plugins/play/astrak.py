@@ -23,7 +23,7 @@ async def checker(_: Client, message: Message):
         [Button("الـبـاشـة", url=f"https://t.me/{channel}")]
     ])
     await message.reply(
-        f"عذرًا عزيزي {user}عليك الإشتراك بقناة السور أولا.",
+        f"عذرًا عزيزي {user}  عليك الإشتراك بقناة السورس أولا.",
         reply_markup = markup
     )
     

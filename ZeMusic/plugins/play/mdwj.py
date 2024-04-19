@@ -56,6 +56,7 @@ async def telegraph(client: Client, message: Message):
             ]
         )
     )
+
     finally:
         os.remove(download_location)
 
@@ -76,6 +77,7 @@ async def hshs(client: Client, message: Message):
                     await message.reply_photo(photo.file_id,       caption=f"""**[★⌞ ѕᴏụʀᴄᴇ ᴀʟᴍᴏʀᴛᴀɢᴇʟ ⌝˹⚡˼⁩](https://t.me/AlmortagelTech)\n\n🐉 ¦ ɴᴀᴍᴇ : {name}\n🤡 ¦ ᴜѕᴇ : {username}\n🔥 ¦ ɪᴅ : `{user_id}`\n🔅 ¦ ɪᴅ ᴄʜᴀᴛ : `{chat_idd}`\n💭 ¦ ᴄʜᴀᴛ : {chat_name}\n🐊 ¦ ɢʀᴏᴜᴘ : {chat_username} \n**""", 
         reply_markup=InlineKeyboardMarkup(
             [
+                
                 [
                     InlineKeyboardButton(
                         name, url=f"https://t.me/{message.reply_to_message.from_user.username}")
